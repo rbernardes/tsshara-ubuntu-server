@@ -14,7 +14,7 @@
 
         driver = blazer_ser
         port = /dev/ttyACM0 # or change port to auto
-        desc = "my server1 ups"
+        desc = "TS Shara"
 EOF
 
 # echo "LISTEN 127.0.0.1 3493" >> /etc/nut/upsd.conf
@@ -33,7 +33,7 @@ No values provided for battery high/low voltages in ups.conf
 Using 'guestimation' (low: 10.400000, high: 13.000000)!
 Battery runtime will not be calculated (runtimecal not set)
 
-# /etc/init.d/nut-server
+# /etc/init.d/nut-server restart
 
 # netstat -tnlp | grep ups
 tcp        0      0 127.0.0.1:3493          0.0.0.0:*               LISTEN      22646/upsd
