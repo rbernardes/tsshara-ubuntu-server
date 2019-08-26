@@ -20,6 +20,10 @@ EOF
 # echo "LISTEN 127.0.0.1 3493" >> /etc/nut/upsd.conf
 ```
 
+### Configure NUT client
+```
+# echo "MODE=standalone" >>  /etc/nut/nut.conf
+```
 
 ### Testing
 ```
@@ -37,11 +41,6 @@ Battery runtime will not be calculated (runtimecal not set)
 
 # netstat -tnlp | grep ups
 tcp        0      0 127.0.0.1:3493          0.0.0.0:*               LISTEN      22646/upsd
-```
-
-### Configure NUT client
-```
-# echo "MODE=standalone" >>  /etc/nut/nut.conf
 ```
 
 ### Testing nut-client > nut-server
